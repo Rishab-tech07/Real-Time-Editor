@@ -72,3 +72,26 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 >>>>>>> 8f03f58 (Complete Project)
+
+Real-Time Code Editor
+Overview
+The Real-Time Code Editor is a collaborative code-sharing platform built with React,CSS and Socket.IO for backend. It enables multiple users to join a shared room, write, edit, and sync code in real-time.
+
+Features
+🔹 Real-time code synchronization using WebSockets (Socket.IO).
+🔹 Multi-user collaboration with unique room IDs.
+🔹 Instant code updates without page refresh.
+🔹 Backend powered by Express.js.
+🔹 Frontend built with React.js.
+Tech Stack
+Frontend: React.js, Socket.IO Client
+Backend: Node.js, Express.js, Socket.IO
+Database: MongoDB (if required)
+Others: CORS, Nodemon
+Install Dependencies
+Backend:
+sh
+Copy
+Edit
+cd server
+npm install
