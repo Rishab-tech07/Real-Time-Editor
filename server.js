@@ -14,6 +14,11 @@ app.use(cors()); // Allow cross-origin requests
 const server = http.createServer(app);
 const io = new Server(server); // Create a new instance of socket.io
 
+app.use(express.static('build'));
+app.use((req, res, next) => {
+    res.sendFile(path.join(__dirname, 'build', 'index.html'));
+})
+
 const userSocketMap = {}; // Maps socket IDs to usernames
 
 // Get all connected clients in a specific room

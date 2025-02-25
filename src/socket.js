@@ -26,3 +26,4 @@ export const initSocket = async () => {
     }
     return socket;
 };
+
